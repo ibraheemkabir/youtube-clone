@@ -1,0 +1,20 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #92929240;
+}
+
+#header{
+    height: 20vh;
+}
+
+#main-navbar{
+    background-color: white;
+    height: 7vh;
+    margin-bottom: 3vh;
+}
+
+#language-navbar{
+    background-color: yellow;
+    height: 10vh;
+}
