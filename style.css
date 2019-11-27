@@ -101,3 +101,44 @@ body{
     justify-content: space-around;
     display: flex;
 }
+#main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+
+}
+
+#video-player-container {
+    padding-left: 1%;
+    width: 65%;
+    
+ 
+}
+#suggestions {
+    background-color: yellow;
+    width: 33%;
+    float: left;
+}
+#video-description {
+    background-color: white;
+    padding: 15px 10px;
+    
+}
+#More-details {
+    background-color: crimson;
+    
+}
+#comments {
+    background-color: maroon;
+    
+}
+#video-info{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+#author-info{
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+}
