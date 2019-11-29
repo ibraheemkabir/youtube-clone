@@ -3,11 +3,9 @@ body{
     padding: 0;
     background-color: #92929240;
 }
-
 #header{
     height: 20vh;
 }
-
 #main-navbar{
     background-color: white;
     height: 7vh;
@@ -15,7 +13,6 @@ body{
     display: flex;
     justify-content: space-between;
 }
-
 #language-navbar{
     height: 10vh;
     border-color: rgb(22, 122, 198);
@@ -23,55 +20,41 @@ body{
     border-width: 1px;
   background-color: white;
 }
-
 #search {
     width: 50%;
-    
     display: flex;
-    
     padding: 8px;
 }
 #search-field{
     width: 80%;
     margin: 0;
     padding: 4px;
-    
-    
 }
 #search-btn {
     padding: 3px;
     width: 10%;
     margin: 0;
     border-block: #D3D3D3;
-    
-    
 }
 #logo {
-    
     display: flex;
     width:25%;
     justify-content:center;
-    
 }
 #sign-in {
-    
     display: flex;
     justify-content: space-around;
-
     width: 25%;
     padding: 6px;
 }
 #sign-in-btn {
     border: none;
-
     height: 30px;
     background-color: rgb(22, 122, 198);;
     text-align: center;
     display: inline-flex;
     padding: 7px;
-  
 }
-
 #top-language-bar{
     height: 30%;
     background-color: rgb(22, 122, 198);
@@ -80,7 +63,6 @@ body{
     display: flex;
     justify-content: space-between;
 }
-
 #bottom-language-bar{
     height: 30%;
     display: flex;
@@ -89,15 +71,143 @@ body{
     padding: 5px 20px;
     font-size: 13px;
 }
-
 #close-btn{
     background-color: transparent;
     border-style: none;
     width: 10px;
 }
-
 #choose-language{
     width: 15%;
     justify-content: space-around;
     display: flex;
+}
+#main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+#video-player-container {
+    padding-left: 1%;
+    width: 65%;
+}
+#suggestions {
+    width: 33%;
+    float: left;
+    background-color: white;
+}
+#video-description {
+    background-color: white;
+    padding: 15px 10px;
+}
+#more-details {
+    background-color: white;
+    padding: 15px 10px;
+    margin-top: 20px;
+    color: rgb(51, 51, 51);
+    font-size: 15px;
+}
+
+#comments {
+    background-color: maroon;
+}
+#video-info{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(226, 226, 226);
+    border-bottom-width: 1px;
+    padding-bottom: 7px;
+}
+#author-info{
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+}
+
+#number_of_views{
+    font-size: 25px;
+    font-weight: 400;
+    color: rgb(102, 102, 102);
+}
+
+#more-info-buttons{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0rem;
+}
+
+#info-buttons{
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+    opacity: 0.5;
+}
+
+#button-text{
+    vertical-align: middle;
+}
+
+#publish-details{
+    border-bottom-style: solid;
+    border-bottom-color: rgb(226, 226, 226);
+    border-bottom-width: 1px;
+    padding-bottom: 7px;
+}
+
+#show-more{
+    text-align: center;
+    padding: 5px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#suggestion-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 15px;
+    font-size: 15px;
+    opacity: 0.5;
+}
+
+#autoplay{
+    display: flex;
+    vertical-align: middle;
+}
+
+#suggested-video-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 15px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(226, 226, 226);
+    border-bottom-width: 1px;
+    padding-bottom: 13px;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+#video-details{
+    width: 50%;
+    display: block;
+    opacity: 0.8;
+}
+
+#details-header{
+    margin-top: 0;
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+#details-author{
+    font-size: 12px;
+    margin: 2px 0px;
+}
+
+#details-views{
+    font-size: 11px;
+    margin: 4px 0px;
 }
