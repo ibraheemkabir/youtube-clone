@@ -124,6 +124,11 @@ body{
     width: 20%;
     justify-content: space-between;
 }
+#views {
+    text-align: right;
+    margin: 0px 0px 2px;
+    font-size: 19px;
+}
 
 #number_of_views{
     font-size: 25px;
