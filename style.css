@@ -51,7 +51,7 @@ body{
     padding: 6px;
 }
 
-#sign-in-btn {
+.sign-in-btn {
     border: none;
     height: 30px;
     background-color: rgb(22, 122, 198);;
@@ -62,7 +62,18 @@ body{
     border-radius: 3px;
     margin-left: 10%;
 }
+.avatar-btn {
+    border: none;
+    height: 30px;
+    background-color: rgb(22, 122, 198);;
+    text-align: center;
+    display: inline-flex;
+    padding: 7px;
+    color: white;
+    border-radius: 3px;
+    margin-left: 10%;
 
+}
 #top-language-bar{
     height: 30%;
     background-color: rgb(22, 122, 198);
@@ -195,6 +206,12 @@ body{
     padding: 5px;
     font-size: 13px;
     font-weight: bold;
+}
+#avatar-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 #suggestion-header{
