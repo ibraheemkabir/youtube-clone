@@ -292,14 +292,14 @@ body{
     padding-bottom: 7px;
 
 }
-#footer-links {
+.footer-links {
     padding: 15px 0px 15px 8px;
 }
-#footer-link-items-list {
+.footer-link-items-list {
     margin: 0px 0px 0px 8px;
     font-weight: 500;
 }
-#footer-link-item{
+.footer-link-item{
     display: inline;
     margin: 0px 15px 0px 0px;
 }
