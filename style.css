@@ -172,14 +172,14 @@ body{
     padding: 1rem 0rem;
 }
 
-#info-buttons{
+.info-buttons{
     background-color: transparent;
     border: none;
     font-size: 15px;
     opacity: 0.5;
 }
 
-#button-text{
+.button-text{
     vertical-align: middle;
 }
 
@@ -190,7 +190,7 @@ body{
     padding-bottom: 7px;
 }
 
-#show-more{
+.show-more{
     text-align: center;
     padding: 5px;
     font-size: 13px;
@@ -210,7 +210,7 @@ body{
     vertical-align: middle;
 }
 
-#suggested-video-container{
+.suggested-video-container{
     display: flex;
     justify-content: space-between;
     padding: 0px 15px;
@@ -223,13 +223,13 @@ body{
     margin-top: 15px;
 }
 
-#video-details{
+.video-details{
     width: 50%;
     display: block;
     opacity: 0.8;
 }
 
-#details-header{
+.details-header{
     margin-top: 0;
     font-size: 15px;
     line-height: 20px;
@@ -237,12 +237,12 @@ body{
     font-weight: bold;
 }
 
-#details-author{
+.details-author{
     font-size: 12px;
     margin: 2px 0px;
 }
 
-#details-views{
+.details-views{
     font-size: 11px;
     margin: 4px 0px;
 }
