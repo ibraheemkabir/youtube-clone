@@ -2,7 +2,7 @@
 
 > This is a youtube clone with layout and styling done with css and html.
 
-![screenshot](./img/youtube-clone.PNG)
+![screenshot](./img/youtube-clone.png)
 
 Additional description about the project and its features.
 
