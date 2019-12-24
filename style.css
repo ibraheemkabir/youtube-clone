@@ -411,3 +411,16 @@ input:checked + .slider::before {
   padding: 0;
   border-color: white;
 }
+.nav-image1 {
+  width: 40px;
+  height: 35px;
+  padding-left: 5px;
+}
+.nav-image2 {
+  width: 80px;
+  height: 40px;
+  margin: 0.3px;
+  padding-left: 5px;
+  
+
+}
