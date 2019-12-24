@@ -1,453 +1,477 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" type="text/css" href="./style.css" />
-    <title>Youtube clone</title>
-  </head>
-  <body>
-    <header id="header">
-      <section>
-        <div id="main-navbar">
-          <div id="logo">
-            <span style="font-size:100%;background-image:url('https://archive.ph/Bss88/73e7cc59947d2ad243d63294411f83990629f7fc.png');background-color: transparent;width:16px;height: 16px;display:inline-block;vertical-align:middle;background-position: -198px -862px;background-repeat: no-repeat;border-width: 0px;border-style: none;margin: 0px;padding: 0px;border-color: white;margin: 12px;"></span>
-            <img id="img" src="img/youtube-2.png" width="100" height= "40" alt="YoutubeLogo">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+  <title>Youtube clone</title>
+</head>
+
+<body>
+  <header id="header">
+    <section>
+      <div id="main-navbar">
+        <div id="logo">
+          <span
+            style="font-size:100%;background-image:url('https://archive.ph/Bss88/73e7cc59947d2ad243d63294411f83990629f7fc.png');background-color: transparent;width:16px;height: 16px;display:inline-block;vertical-align:middle;background-position: -198px -862px;background-repeat: no-repeat;border-width: 0px;border-style: none;margin: 0px;padding: 0px;border-color: white;margin: 12px;"></span>
+          <img id="img" src="img/youtube-2.png" width="100" height="40" alt="YoutubeLogo">
+        </div>
+
+        <div id="search">
+          <input id="search-field" placeholder="Search" />
+          <button id="search-btn">
+            <img src="img/search.png" alt="Search Image" />
+          </button>
+        </div>
+
+        <div id="sign-in">
+          <span
+            style="font-size:100%;background-image:url('https://archive.ph/Bss88/73e7cc59947d2ad243d63294411f83990629f7fc.png');background-color: transparent; width:24px;height:24px;display:inline-block;vertical-align:middle;background-position: -125px -314px; background-repeat: no-repeat; border-width: 0px; border-style: none; margin: 0px; padding: 0px; margin-top: 5px; border-color: white;opacity: 0.5; "></span>
+          <button type="button" class="sign-in-btn">sign-in</button>
+          <button type="button" class="avatar-btn">M</button>
+
+        </div>
+      </div>
+
+
+    </section>
+    <section>
+      <div id="language-navbar">
+        <div id="top-language-bar">
+          <div id="choose-language">
+            <span
+              style="padding-right: 2rem; font-size:100%;display:inline-block;vertical-align:middle;cursor:auto;background-image:url('https://archive.ph/K4Klp/73e7cc59947d2ad243d63294411f83990629f7fc.png');background-color: transparent; width:25px;height:15px;background-position: -119px -376px; background-repeat: no-repeat; border-width: 0px; border-style: none; margin: 0px; padding: 0px; border-color: white;">
+            </span>
+            <span style="padding-left: 1rem">Choose your language</span>
           </div>
 
-          <div id="search">
-            <input id="search-field" placeholder="Search" />
-            <button id="search-btn">
-              <img src="img/search.png"  alt="Search Image"/>
+          <span><img style="width:10px;" src="./img/close.png" alt="close" /></span>
+        </div>
+        <div id="bottom-language-bar">
+          <div>You are viewing Youtube in English(US). You can <span style="color: #167ac6">change this preference
+              below.</span></div>
+          <div style="color: #167ac6">Learn more</div>
+        </div>
+      </div>
+    </section>
+  </header>
+
+
+  <section id="main">
+    <div id="video-player-container">
+
+      <iframe width="100%" height="450px" src="https://www.youtube.com/embed/vVltNtWo_XQ" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      <div id="video-description">
+        <h3>React vs. Angular</h3>
+
+        <div id="video-info">
+          <div id="author-info">
+            <img src="img/user.jpeg" alt="User">
+            <div id="author-name">
+              <p>The Odin Project</p>
+              <input type="image" src="img/youtube-subscribe.png" width="80" height="40" alt="subscribe">
+            </div>
+          </div>
+          <div id="views">
+            <p id="number_of_views">300000</p>
+          </div>
+
+        </div>
+
+        <div id="more-info-buttons">
+          <div>
+            <button class="info-buttons">
+              <span
+                style="display:inline-block;vertical-align:middle;background-image:url('https://archive.ph/Bss88/73e7cc59947d2ad243d63294411f83990629f7fc.png');background-color: transparent; width:20px;height:20px;margin-right:6px;background-position: -151px -725px; background-repeat: no-repeat;"></span>
+              <span id="button-text">Add to</span>
+            </button>
+            <button class="info-buttons">
+              <span
+                style="display:inline-block;vertical-align:middle;background-image:url('https://archive.ph/Bss88/73e7cc59947d2ad243d63294411f83990629f7fc.png');background-color: transparent; width:20px;height:20px;margin-right:6px;background-position: -267px -824px; background-repeat: no-repeat;">
+              </span>
+              <span class="button-text">Share</span>
+            </button>
+            <button class="info-buttons">
+              <span
+                style="display:inline-block;vertical-align:middle;margin-right:6px;background-image:url('https://archive.ph/Bss88/73e7cc59947d2ad243d63294411f83990629f7fc.png');background-color: transparent; width:20px;height:20px;background-position: -154px -860px; background-repeat: no-repeat; ">
+              </span>
+              <span class="button-text">More</span>
+            </button>
+          </div>
+          <div>
+            <button class="info-buttons">
+              <span
+                style="background-image:url('https://archive.ph/Bss88/73e7cc59947d2ad243d63294411f83990629f7fc.png');background-color: transparent; width:20px;height:20px;display:inline-block;vertical-align:middle;margin-right:6px;background-position: 0px -867px; background-repeat: no-repeat; ">
+              </span>
+              <span class="button-text">359</span>
+            </button>
+
+            <button class="info-buttons"><span class="button-text">
+                <span
+                  style="background-image:url('https://archive.ph/Bss88/73e7cc59947d2ad243d63294411f83990629f7fc.png');background-color: transparent; width:20px;height:20px;padding-bottom:1px;display:inline-block;vertical-align:middle;margin-right:6px;background-position: -174px -804px; background-repeat: no-repeat;">
+                </span>
+                <span>14</span></span>
             </button>
           </div>
 
-          <div id="sign-in">
-              <span style="font-size:100%;background-image:url('https://archive.ph/Bss88/73e7cc59947d2ad243d63294411f83990629f7fc.png');background-color: transparent; width:24px;height:24px;display:inline-block;vertical-align:middle;background-position: -125px -314px; background-repeat: no-repeat; border-width: 0px; border-style: none; margin: 0px; padding: 0px; margin-top: 5px; border-color: white;opacity: 0.5; "></span>
-            <button type="button" class="sign-in-btn">sign-in</button>
-            <button type="button" class="avatar-btn">M</button>
-            
-          </div>
         </div>
-
-       
-      </section>
-      <section>
-        <div id="language-navbar">
-          <div id="top-language-bar">
-            <div id="choose-language">
-              <span style="padding-right: 2rem; font-size:100%;display:inline-block;vertical-align:middle;cursor:auto;background-image:url('https://archive.ph/K4Klp/73e7cc59947d2ad243d63294411f83990629f7fc.png');background-color: transparent; width:25px;height:15px;background-position: -119px -376px; background-repeat: no-repeat; border-width: 0px; border-style: none; margin: 0px; padding: 0px; border-color: white;">
-              </span>
-              <span style="padding-left: 1rem">Choose your language</span>
-            </div>
-            
-            <span><img style="width:10px;" src="./img/close.png" alt="close"/></span>
-          </div>
-          <div id="bottom-language-bar">
-            <div>You are viewing Youtube in English(US). You can <span style="color: #167ac6">change this preference below.</span></div>
-            <div style="color: #167ac6">Learn more</div>
-            </div>
-        </div>
-      </section>
-    </header>
-    
-    
-    <section id="main">
-      <div id="video-player-container">
-
-          <iframe width="100%" height="450px" src="https://www.youtube.com/embed/vVltNtWo_XQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-          <div id="video-description"> 
-              <h3>React vs. Angular</h3>
-
-              <div id="video-info">
-                <div id="author-info">
-                    <img src="img/user.jpeg" alt="User">
-                    <div id="author-name">
-                      <p>The Odin Project</p>
-                      <input type="image" src="img/youtube-subscribe.png" width="80" height="40" alt="subscribe">
-                    </div>
-                </div>
-                <div id="views">
-                  <p id="number_of_views">300000</p>
-                </div>
-             
-              </div>
-
-              <div id="more-info-buttons">
-                <div>
-                    <button class="info-buttons">
-                      <span style="display:inline-block;vertical-align:middle;background-image:url('https://archive.ph/Bss88/73e7cc59947d2ad243d63294411f83990629f7fc.png');background-color: transparent; width:20px;height:20px;margin-right:6px;background-position: -151px -725px; background-repeat: no-repeat;"></span>
-                      <span id="button-text">Add to</span>
-                    </button>
-                    <button class="info-buttons">
-                      <span style="display:inline-block;vertical-align:middle;background-image:url('https://archive.ph/Bss88/73e7cc59947d2ad243d63294411f83990629f7fc.png');background-color: transparent; width:20px;height:20px;margin-right:6px;background-position: -267px -824px; background-repeat: no-repeat;">
-                      </span>
-                      <span class="button-text">Share</span>
-                    </button>
-                    <button class="info-buttons">
-                      <span style="display:inline-block;vertical-align:middle;margin-right:6px;background-image:url('https://archive.ph/Bss88/73e7cc59947d2ad243d63294411f83990629f7fc.png');background-color: transparent; width:20px;height:20px;background-position: -154px -860px; background-repeat: no-repeat; ">
-                      </span>
-                      <span class="button-text">More</span>
-                    </button>
-                </div>
-                <div>
-                    <button class="info-buttons">
-                      <span style="background-image:url('https://archive.ph/Bss88/73e7cc59947d2ad243d63294411f83990629f7fc.png');background-color: transparent; width:20px;height:20px;display:inline-block;vertical-align:middle;margin-right:6px;background-position: 0px -867px; background-repeat: no-repeat; ">
-                      </span>
-                      <span class="button-text">359</span>
-                    </button>
-                   
-                    <button class="info-buttons"><span class="button-text">
-                        <span style="background-image:url('https://archive.ph/Bss88/73e7cc59947d2ad243d63294411f83990629f7fc.png');background-color: transparent; width:20px;height:20px;padding-bottom:1px;display:inline-block;vertical-align:middle;margin-right:6px;background-position: -174px -804px; background-repeat: no-repeat;">
-                        </span>
-                      <span>14</span></span>
-                    </button>
-                </div>
-                
-              </div>
-      
-            </div>
-
-            <div id="more-details">
-              <div id="publish-details">
-                  <p style="margin-top: 1px; font-weight: 600">Published on Feb 27, 2014</p>
-                      <p style="margin-top: 1px">
-                          How do you contribute to open source? In this video, I'll describe the easiest way to make a simple contribution to an open source project -- without using the command line, a text editor, "forking a repo", or even touching Git outside of Github. I'll also describe what kinds of contributions open source software projects are typically looking for. As an example, I use submitting a student solution to a web development exercise from The Odin Project, a free online curriculum for learning web development with Ruby on Rails. You can find more information about that project at http://theodinproject.com.
-                      </p>
-              </div>
-              <div class="show-more">
-                SHOW MORE
-              </div>
-                 
-      
-            </div>
-      
-            <div id="comments">
-              <p>
-                  <span class="loading-gif"></span>
-                Loading.....
-              </p>
-              
-      
-            </div>
-      
-            
-
 
       </div>
-      <div id="suggestions">
-        <div id="suggestion-header">
-          <p>
-            Up next
+
+      <div id="more-details">
+        <div id="publish-details">
+          <p style="margin-top: 1px; font-weight: 600">Published on Feb 27, 2014</p>
+          <p style="margin-top: 1px">
+            How do you contribute to open source? In this video, I'll describe the easiest way to make a simple
+            contribution to an open source project -- without using the command line, a text editor, "forking a repo",
+            or even touching Git outside of Github. I'll also describe what kinds of contributions open source software
+            projects are typically looking for. As an example, I use submitting a student solution to a web development
+            exercise from The Odin Project, a free online curriculum for learning web development with Ruby on Rails.
+            You can find more information about that project at http://theodinproject.com.
           </p>
-          <div id="autoplay">
-              <p>
-                Autoplay
-              </p>
-              <span style="font-size:100%;display:inline-block;box-shadow:none;opacity:0.5;cursor:pointer;background-image:url('https://archive.ph/Bss88/73e7cc59947d2ad243d63294411f83990629f7fc.png');background-color: transparent; width:16px;height:16px;background-position: -56px -511px; background-repeat: no-repeat; border-width: 0px; border-style: none; margin: -1px 4px 0px; padding: 0px; border-color: white;margin-top: 15px; ">
-              </span>
-              <span>
-                  <label class="switch">
-                      <input type="checkbox" checked>
-                      <span class="slider round"></span>
-                    </label>
-              </span>
-          </div>
         </div>
-        <div class="suggested-video-container">
-          <div class="sugested-video">
-              <img src="https://i.ytimg.com/vi/4F2m91eKmts/hq720.jpg?sqp=-oaymwEZCOgCEMoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLAOprceqhi3cByjE5HeG6E8klPGZA" alt="Suggested Video"
-                style="height:94px;width:168px;font-size:100%;background-color: transparent; position:relative;top:0px;border-width: 0px; border-style: none; margin: 0px; padding: 0px; border-color: white; "
-                />
-          </div>
-          <div class="video-details">
-            <div>
-                <p class="details-header">
-                  Contributing to Open Source Part II: The Real Way
-                </p>
-                <p class="details-author">
-                    The Odin Project
-                </p>
-                <p class="details-views">
-                    29,985 views
-                </p>
-            </div>
-          </div>
+        <div class="show-more">
+          SHOW MORE
         </div>
-        <div class="suggested-video-container">
-            <div class="sugested-video">
-                <a href="href=/watch?v=tCAt8eEKPDc"></a>
-                <img src="https://i.ytimg.com/vi/tCAt8eEKPDc/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&amp;rs=AOn4CLCyuPsIA7oLW5SKKW7TgI5l8mWxMg" alt="Suggested Video"
-                style="height:94px;width:168px;font-size:100%;background-color: transparent; position:relative;top:0px;border-width: 0px; border-style: none; margin: 0px; padding: 0px; border-color: white; "
-                />
-            </div>
-            <div class="video-details">
-                <div>
-                    <p class="details-header">
-                      Contributing to Open Source Part II: The Real Way
-                    </p>
-                    <p class="details-author">
-                        The Odin Project
-                    </p>
-                    <p class="details-views">
-                        29,985 views
-                    </p>
-                </div>
-            </div>
-          </div>
-          <div class="suggested-video-container">
-              <div class="sugested-video">
-                <img src="https://archive.ph/Bss88/6350ed47768d4be4388f5a8a2b530730b3520802" alt="Suggested Video"
-                style="height:94px;width:168px;font-size:100%;background-color: transparent; position:relative;top:0px;border-width: 0px; border-style: none; margin: 0px; padding: 0px; border-color: white; "
-                />
-              </div>
-              <div class="video-details">
-                  <div>
-                      <p class="details-header">
-                        Contributing to Open Source Part II: The Real Way
-                      </p>
-                      <p class="details-author">
-                          The Odin Project
-                      </p>
-                      <p class="details-views">
-                          29,985 views
-                      </p>
-                  </div>
-              </div>
-            </div>
-            <div class="suggested-video-container">
-                <div class="sugested-video">
-                    <img src="https://archive.ph/Bss88/6350ed47768d4be4388f5a8a2b530730b3520802" alt="Suggested Video"
-                      style="height:94px;width:168px;font-size:100%;background-color: transparent; position:relative;top:0px;border-width: 0px; border-style: none; margin: 0px; padding: 0px; border-color: white; "
-                      />
-                </div>
-                <div class="video-details">
-                  <div>
-                      <p class="details-header">
-                        Contributing to Open Source Part II: The Real Way
-                      </p>
-                      <p class="details-author">
-                          The Odin Project
-                      </p>
-                      <p class="details-views">
-                          29,985 views
-                      </p>
-                  </div>
-                </div>
-              </div>
-              <div class="suggested-video-container">
-                  <div class="sugested-video">
-                      <img src="https://archive.ph/Bss88/6350ed47768d4be4388f5a8a2b530730b3520802" alt="Suggested Video"
-                      style="height:94px;width:168px;font-size:100%;background-color: transparent; position:relative;top:0px;border-width: 0px; border-style: none; margin: 0px; padding: 0px; border-color: white; "
-                      />
-                  </div>
-                  <div class="video-details">
-                      <div>
-                          <p class="details-header">
-                            Contributing to Open Source Part II: The Real Way
-                          </p>
-                          <p class="details-author">
-                              The Odin Project
-                          </p>
-                          <p class="details-views">
-                              29,985 views
-                          </p>
-                      </div>
-                  </div>
-                </div>
-                <div class="suggested-video-container">
-                    <div class="sugested-video">
-                      <img src="https://archive.ph/Bss88/6350ed47768d4be4388f5a8a2b530730b3520802" alt="Suggested Video"
-                      style="height:94px;width:168px;font-size:100%;background-color: transparent; position:relative;top:0px;border-width: 0px; border-style: none; margin: 0px; padding: 0px; border-color: white; "
-                      />
-                    </div>
-                    <div class="video-details">
-                        <div>
-                            <p class="details-header">
-                              Contributing to Open Source Part II: The Real Way
-                            </p>
-                            <p class="details-author">
-                                The Odin Project
-                            </p>
-                            <p class="details-views">
-                                29,985 views
-                            </p>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="suggested-video-container">
-                      <div class="sugested-video">
-                          <img src="https://archive.ph/Bss88/6350ed47768d4be4388f5a8a2b530730b3520802" alt="Suggested Video"
-                            style="height:94px;width:168px;font-size:100%;background-color: transparent; position:relative;top:0px;border-width: 0px; border-style: none; margin: 0px; padding: 0px; border-color: white; "
-                            />
-                      </div>
-                      <div class="video-details">
-                        <div>
-                            <p class="details-header">
-                              Contributing to Open Source Part II: The Real Way
-                            </p>
-                            <p class="details-author">
-                                The Odin Project
-                            </p>
-                            <p class="details-views">
-                                29,985 views
-                            </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="suggested-video-container">
-                        <div class="sugested-video">
-                            <img src="https://archive.ph/Bss88/6350ed47768d4be4388f5a8a2b530730b3520802" alt="Suggested Video"
-                            style="height:94px;width:168px;font-size:100%;background-color: transparent; position:relative;top:0px;border-width: 0px; border-style: none; margin: 0px; padding: 0px; border-color: white; "
-                            />
-                        </div>
-                        <div class="video-details">
-                            <div>
-                                <p class="details-header">
-                                  Contributing to Open Source Part II: The Real Way
-                                </p>
-                                <p class="details-author">
-                                    The Odin Project
-                                </p>
-                                <p class="details-views">
-                                    29,985 views
-                                </p>
-                            </div>
-                        </div>
-                      </div>
-                      <div class="suggested-video-container">
-                          <div class="sugested-video">
-                            <img src="https://archive.ph/Bss88/6350ed47768d4be4388f5a8a2b530730b3520802" alt="Suggested Video"
-                            style="height:94px;width:168px;font-size:100%;background-color: transparent; position:relative;top:0px;border-width: 0px; border-style: none; margin: 0px; padding: 0px; border-color: white; "
-                            />
-                          </div>
-                          <div class="video-details">
-                              <div>
-                                  <p class="details-header">
-                                    Contributing to Open Source Part II: The Real Way
-                                  </p>
-                                  <p class="details-author">
-                                      The Odin Project
-                                  </p>
-                                  <p class="details-views">
-                                      29,985 views
-                                  </p>
-                              </div>
-                          </div>
-                        </div>
-                        <div class="show-more" style="color: grey">
-                            SHOW MORE
-                          </div>
+
+
       </div>
-    </section>
 
-    <footer id="footer">
+      <div id="comments">
+        <p>
+          <span class="loading-gif"></span>
+          Loading.....
+        </p>
 
-        <div id="footer-buttons-area">
-            <img id="footer-image" src="./img/youtube-2.png"  width="100" height="30" alt="Youtube-Footer" >
-            <ul id="buttons-list">
-              <li class="footer-button">
-                <button >
-                    <span style="background-color: transparent; display:inline-block;font-size:0px;vertical-align:middle;border-width: 0px; border-style: none; margin: 0px 6px 0px 0px; padding: 0px; border-color: white; "><span style="font-size:100%;display:inline-block;vertical-align:middle;opacity:0.5;background-image:url('https://archive.ph/Bss88/73e7cc59947d2ad243d63294411f83990629f7fc.png');background-color: transparent; width:25px;height:15px;background-position: 0px -666px; background-repeat: no-repeat; border-width: 0px; border-style: none; margin: 0px; padding: 0px; border-color: white; "></span></span>
-                    <span style="font-size:100%;background-color: transparent; vertical-align:middle;border-width: 0px; border-style: none; margin: 0px; padding: 0px; border-color: white; ">
-                        <span style="font-size:100%;background-color: transparent; font-weight:normal;border-width: 0px; border-style: none; margin: 0px; padding: 0px; border-color: white; ">
-                        Language: </span>
-                        English </span>
-                </button>
-              </li>
 
-            <li class="footer-button">
-              <button>
-                  <span style="opacity:0.5;"></span>
-                  <span style="font-size:100%;background-color: transparent; border-width: 0px; border-style: none; margin: 0px; padding: 0px; border-color: white; ">
-                      <span style="font-size:100%;background-color: transparent; font-weight:normal;border-width: 0px; border-style: none; margin: 0px; padding: 0px; border-color: white; ">
-                      Location: </span>
-                      Netherlands </span>
-              </button>
-            </li>
+      </div>
 
-            <li class="footer-button">
-                <button>
-                    <span style="font-size:100%;background-color: transparent; vertical-align:middle;border-width: 0px; border-style: none; margin: 0px; padding: 0px; border-color: white; ">
-                        <span style="font-size:100%;background-color: transparent; font-weight:normal;border-width: 0px; border-style: none; margin: 0px; padding: 0px; border-color: white; ">
-                        Restricted Mode: </span>
-                        Off </span>
-                </button>
 
-            </li>
 
-            <li class="footer-button">
-              <button>
-                  <span style="font-size:100%;display:inline-block;vertical-align:middle;opacity:0.5;background-image:url('https://archive.ph/Bss88/73e7cc59947d2ad243d63294411f83990629f7fc.png');background-color: transparent; width:12px;height:15px;background-position: -213px -605px; background-repeat: no-repeat; border-width: 0px; border-style: none; margin: 0px; padding: 0px; border-color: white; ">
-                  </span>
-                  <span style="font-size:100%;background-color: transparent; vertical-align:middle;border-width: 0px; border-style: none; margin: 0px; padding: 0px; border-color: white; ">History</span>
 
-              </button>
-
-            </li>
-            <li class="footer-button">
-              <button>
-                  <span style="font-size:100%;display:inline-block;vertical-align:middle;opacity:0.5;background-image:url('https://archive.ph/Bss88/73e7cc59947d2ad243d63294411f83990629f7fc.png');background-color: transparent; width:15px;height:16px;background-position: -147px -230px; background-repeat: no-repeat; border-width: 0px; border-style: none; margin: 0px; padding: 0px; border-color: white; "></span>
-                    <span style="font-size:100%;background-color: transparent; vertical-align:middle;border-width: 0px; border-style: none; margin: 0px; padding: 0px; border-color: white; ">Help
-                      </span>
-              </button>
-
-            </li>
-
-            </ul>
-    
+    </div>
+    <div id="suggestions">
+      <div id="suggestion-header">
+        <p>
+          Up next
+        </p>
+        <div id="autoplay">
+          <p>
+            Autoplay
+          </p>
+          <span
+            style="font-size:100%;display:inline-block;box-shadow:none;opacity:0.5;cursor:pointer;background-image:url('https://archive.ph/Bss88/73e7cc59947d2ad243d63294411f83990629f7fc.png');background-color: transparent; width:16px;height:16px;background-position: -56px -511px; background-repeat: no-repeat; border-width: 0px; border-style: none; margin: -1px 4px 0px; padding: 0px; border-color: white;margin-top: 15px; ">
+          </span>
+          <span>
+            <label class="switch">
+              <input type="checkbox" checked>
+              <span class="slider round"></span>
+            </label>
+          </span>
         </div>
-
-        <div id="footer-links">
-          <ul class="footer-link-items-list">
-            <li class="footer-link-item">
-              <a class="link" href="">About</a>
-
-            </li>
-            <li class="footer-link-item">
-                <a class="link" href="">Press</a>
-  
-            </li>
-            <li class="footer-link-item">
-              <a class="link" href="">Copyright</a>
-    
-            </li>
-            <li class="footer-link-item">
-              <a class="link" href="">Advertise</a>
-  
-            </li>
-            <li class="footer-link-item">
-                <a class="link" href="">Developers</a>
-  
-            </li>
-
-          </ul>
-
-          <ul class="footer-link-items-list">
-            <li class="footer-link-item">
-              <a class="link-small" href="">Terms</a>
-            </li>
-            <li class="footer-link-item">
-                <a class="link-small" href="">Privacy</a>
-  
-            </li>
-            <li class="footer-link-item">
-                <a class="link-small" href="">Policy&Safety</a>
-  
-            </li>
-            <li class="footer-link-item">
-                <a class="link-small" href="">Test new features</a>
-  
-            </li>
-          </ul>
+      </div>
+      <div class="suggested-video-container">
+        <div class="sugested-video">
+          <iframe class="suggested" src="https://www.youtube.com/embed/lbbNoCFSBV4">
+          </iframe>
 
 
         </div>
+        <div class="video-details">
+          <div>
+            <p class="details-header">
+              Create a christmas tree with terminal
+            </p>
+            <p class="details-author">
+              Engineer Man
+            </p>
+            <p class="details-views">
+              10, 675 views
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="suggested-video-container">
+        <div class="sugested-video">
+          <iframe class="suggested" src="https://www.youtube.com/embed/mUxS-35qO44">
+          </iframe>
 
-    </footer>
+        </div>
+        <div class="video-details">
+          <div>
+            <p class="details-header">
+              Top 10 Programming languages for 2019
+            </p>
+            <p class="details-author">
+              Edureka
+            </p>
+            <p class="details-views">
+              29,986 views
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="suggested-video-container">
+        <div class="sugested-video">
+          <iframe class="suggested" src="https://www.youtube.com/embed/r16Rn4_jDfk">
+          </iframe>
+        </div>
+        <div class="video-details">
+          <div>
+            <p class="details-header">
+              How to Code and make millions
+            </p>
+            <p class="details-author">
+              Mosh
+            </p>
+            <p class="details-views">
+              1.4M views
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="suggested-video-container">
+        <div class="sugested-video">
+          <iframe class="suggested" src="https://www.youtube.com/embed/-AkBfBWr_Gw">
+          </iframe>
+        </div>
+        <div class="video-details">
+          <div>
+            <p class="details-header">
+              Can you become a Data Scientist
+            </p>
+            <p class="details-author">
+              Data Science daily
+            </p>
+            <p class="details-views">
+              298,985 views
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="suggested-video-container">
+        <div class="sugested-video">
+          <iframe class="suggested" src="https://www.youtube.com/embed/1JZG9x_VOwA">
+          </iframe>
+        </div>
+        <div class="video-details">
+          <div>
+            <p class="details-header">
+              How does your mobile phone work?
+            </p>
+            <p class="details-author">
+              Mobile Explained
+            </p>
+            <p class="details-views">
+              129,985 views
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="suggested-video-container">
+        <div class="sugested-video">
+          <iframe class="suggested" src="https://www.youtube.com/embed/xnobktms0TM">
+          </iframe>
+        </div>
+        <div class="video-details">
+          <div>
+            <p class="details-header">
+              The evolution of mobile phones
+            </p>
+            <p class="details-author">
+              Mobile Explained
+            </p>
+            <p class="details-views">
+              529,985 views
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="suggested-video-container">
+        <div class="sugested-video">
+          <iframe class="suggested" src="https://www.youtube.com/embed/2eUDm2_ZSwc">
+          </iframe>
+        </div>
+        <div class="video-details">
+          <div>
+            <p class="details-header">
+              Joyner Lucas - Gucci Gang (Remix)
+            </p>
+            <p class="details-author">
+              Joyner Lucas
+            </p>
+            <p class="details-views">
+              2.85M views
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="suggested-video-container">
+        <div class="sugested-video">
+          <iframe class="suggested" src="https://www.youtube.com/embed/xpVfcZ0ZcFM">
+          </iframe>
+        </div>
+        <div class="video-details">
+          <div>
+            <p class="details-header">
+              Drake - God's Plan
+            </p>
+            <p class="details-author">
+              Drake
+            </p>
+            <p class="details-views">
+              298M views
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="suggested-video-container">
+        <div class="sugested-video">
+          <iframe class="suggested" src="https://www.youtube.com/embed/DRS_PpOrUZ4">
+          </iframe>
+        </div>
+        <div class="video-details">
+          <div>
+            <p class="details-header">
+              Drake - In My Feelings
+            </p>
+            <p class="details-author">
+              Drake
+            </p>
+            <p class="details-views">
+              299M views
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="show-more" style="color: grey">
+        SHOW MORE
+      </div>
+    </div>
+  </section>
 
-  
-  </body>
+  <footer id="footer">
+
+    <div id="footer-buttons-area">
+      <img id="footer-image" src="./img/youtube-2.png" width="100" height="30" alt="Youtube-Footer">
+      <ul id="buttons-list">
+        <li class="footer-button">
+          <button>
+            <span
+              style="background-color: transparent; display:inline-block;font-size:0px;vertical-align:middle;border-width: 0px; border-style: none; margin: 0px 6px 0px 0px; padding: 0px; border-color: white; "><span
+                style="font-size:100%;display:inline-block;vertical-align:middle;opacity:0.5;background-image:url('https://archive.ph/Bss88/73e7cc59947d2ad243d63294411f83990629f7fc.png');background-color: transparent; width:25px;height:15px;background-position: 0px -666px; background-repeat: no-repeat; border-width: 0px; border-style: none; margin: 0px; padding: 0px; border-color: white; "></span></span>
+            <span
+              style="font-size:100%;background-color: transparent; vertical-align:middle;border-width: 0px; border-style: none; margin: 0px; padding: 0px; border-color: white; ">
+              <span
+                style="font-size:100%;background-color: transparent; font-weight:normal;border-width: 0px; border-style: none; margin: 0px; padding: 0px; border-color: white; ">
+                Language: </span>
+              English </span>
+          </button>
+        </li>
+
+        <li class="footer-button">
+          <button>
+            <span style="opacity:0.5;"></span>
+            <span
+              style="font-size:100%;background-color: transparent; border-width: 0px; border-style: none; margin: 0px; padding: 0px; border-color: white; ">
+              <span
+                style="font-size:100%;background-color: transparent; font-weight:normal;border-width: 0px; border-style: none; margin: 0px; padding: 0px; border-color: white; ">
+                Location: </span>
+              Netherlands </span>
+          </button>
+        </li>
+
+        <li class="footer-button">
+          <button>
+            <span
+              style="font-size:100%;background-color: transparent; vertical-align:middle;border-width: 0px; border-style: none; margin: 0px; padding: 0px; border-color: white; ">
+              <span
+                style="font-size:100%;background-color: transparent; font-weight:normal;border-width: 0px; border-style: none; margin: 0px; padding: 0px; border-color: white; ">
+                Restricted Mode: </span>
+              Off </span>
+          </button>
+
+        </li>
+
+        <li class="footer-button">
+          <button>
+            <span
+              style="font-size:100%;display:inline-block;vertical-align:middle;opacity:0.5;background-image:url('https://archive.ph/Bss88/73e7cc59947d2ad243d63294411f83990629f7fc.png');background-color: transparent; width:12px;height:15px;background-position: -213px -605px; background-repeat: no-repeat; border-width: 0px; border-style: none; margin: 0px; padding: 0px; border-color: white; ">
+            </span>
+            <span
+              style="font-size:100%;background-color: transparent; vertical-align:middle;border-width: 0px; border-style: none; margin: 0px; padding: 0px; border-color: white; ">History</span>
+
+          </button>
+
+        </li>
+        <li class="footer-button">
+          <button>
+            <span
+              style="font-size:100%;display:inline-block;vertical-align:middle;opacity:0.5;background-image:url('https://archive.ph/Bss88/73e7cc59947d2ad243d63294411f83990629f7fc.png');background-color: transparent; width:15px;height:16px;background-position: -147px -230px; background-repeat: no-repeat; border-width: 0px; border-style: none; margin: 0px; padding: 0px; border-color: white; "></span>
+            <span
+              style="font-size:100%;background-color: transparent; vertical-align:middle;border-width: 0px; border-style: none; margin: 0px; padding: 0px; border-color: white; ">Help
+            </span>
+          </button>
+
+        </li>
+
+      </ul>
+
+    </div>
+
+    <div id="footer-links">
+      <ul class="footer-link-items-list">
+        <li class="footer-link-item">
+          <a class="link" href="">About</a>
+
+        </li>
+        <li class="footer-link-item">
+          <a class="link" href="">Press</a>
+
+        </li>
+        <li class="footer-link-item">
+          <a class="link" href="">Copyright</a>
+
+        </li>
+        <li class="footer-link-item">
+          <a class="link" href="">Advertise</a>
+
+        </li>
+        <li class="footer-link-item">
+          <a class="link" href="">Developers</a>
+
+        </li>
+
+      </ul>
+
+      <ul class="footer-link-items-list">
+        <li class="footer-link-item">
+          <a class="link-small" href="">Terms</a>
+        </li>
+        <li class="footer-link-item">
+          <a class="link-small" href="">Privacy</a>
+
+        </li>
+        <li class="footer-link-item">
+          <a class="link-small" href="">Policy&Safety</a>
+
+        </li>
+        <li class="footer-link-item">
+          <a class="link-small" href="">Test new features</a>
+
+        </li>
+      </ul>
+
+
+    </div>
+
+  </footer>
+
+
+</body>
+
 </html>
