@@ -424,3 +424,10 @@ input:checked + .slider::before {
   margin: 0.3px;
   padding-left: 5px;
 }
+.nav-image3 {
+  width: 40px;
+  height: 40px;
+  margin: 0.3px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
